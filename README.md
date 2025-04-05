@@ -85,3 +85,7 @@ python source/app.py path/to/template.yaml -p arn:aws:iam::123456789012:policy/b
 4. It generates a policy document with appropriate Allow and Deny statements
 5. It saves the policy document to a file with a unique name
 6. If requested (default), it creates an IAM role with the generated policy
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

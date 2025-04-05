@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cfn-perm"
+version = "0.1.2"
+description = "A tool to automatically generate IAM permissions from CloudFormation templates"
+readme = "README.md"
+authors = [
+    {name = "S Murali Krishnan", email = "mrlikrsh@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Utilities",
+]
+license-files = [
+    "LICENSE",
+]
+keywords = ["aws, cloudformation, iam, permissions"]
+dependencies = [
+    "boto3",
+    "pyyaml"
+]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/mrlikl/cfn-perm.git"
+
+[project.scripts]
+cfn-perm = "source.app:main"
